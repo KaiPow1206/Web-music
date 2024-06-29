@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.mt-50{
+    margin-top: 50px;
+}   
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 60px;   
+    background-color: #000;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav li a{
+    color: pink;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
+#nav li:hover a{
+    color: #000 ;
+    background-color:pink;
+    display: inline-block;
+}
+
+#nav li {
+    display:inline-block;
+}
+
+#search-box{
+    float: right;
+    margin: 5px 15px;
+    background: pink;
+    border-radius: 30px;
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    width: 0;
+    padding:0;
+    transition: all 0.25s ease-in-out;
+}
+
+#search-box:hover #search-text, #search-box #search-text:valid{
+    width: 200px;
+    padding: 10px 0px 10px 15px;
+}
+
+#search-box #search-btn{
+    color: black;
+    background-color:pink;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+#slider{
+    margin-top: 60px;
+    /* padding-top: 50%;  */
+    /* background: url(/laptrinhweb/img/anh_le_hoi.jpg) top center / cover no-repeat; */
+}
+
+
+img{
+    object-fit: cover;
+    height: 650px;
+    border-style: none;
+    vertical-align: middle;
+}
+
+#slider .text-content{
+    position: absolute;
+    top: 540px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#content{
+    min-height: 2000px;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 30px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    filter: drop-shadow(0.5em 0.5em 0.2em #000);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+#content .section-sub-heading{
+    font-size: 20px;
+    padding-top: 25px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+
+}
+
+#content .about-text{
+    filter: drop-shadow(0.5em 0.5em 0.2em #000);
+    font-size: 20px;
+    padding-top: 25px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#content .news-section{
+    display: block;
+    border-radius: 10%;
+    min-height: 190px;
+    background-color: #000;
+}
+
+#content .news-about{
+    color: pink;
+    padding-left: 5px;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+#content .news-about img{
+    cursor:pointer;
+    object-fit: cover;
+    transition: transform 0.8s;
+    margin-left: -35px;
+    padding-right: 10px;
+    border-radius: 25%;
+    width: 190px;
+    height: 150px;
+}
+
+#content .news-about:hover img{
+    transform: scale(1.15);
+}
+
+
+#content .new-heading{
+    display: inline;
+    filter: drop-shadow(0.3em 0.3em 0.4em #fff);
+    color: #fff;
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+#content .new-heading:hover{
+    color: skyblue;
+    filter: drop-shadow(0.3em 0.3em 0.4em skyblue);
+}
+
+#content .new-text{
+    display: flex;
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-right: 35px;
+    text-align: justify;
+    opacity: 0.7;
+    /* word-wrap: break-word; */
+    padding-top: 20px;
+    font-size: 15px;
+    transition: 0.5s linear;
+}
+
+#content .new-text:hover{
+    color: skyblue;
+}
+
+#footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #000;
+
+}
+.footer-content{
+    text-align: center;
+    color:white;
+    line-height: 40px;
+}
